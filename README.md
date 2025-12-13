@@ -9,7 +9,7 @@ Due to privacy considerations, datasets are not included in this repository.
 
 ### Emotion Dataset
 - **Source**: Twitter Emotion Dataset
-- **Download**: [https://www.kaggle.com/...](https://github.com/meisaputri21/Indonesian-Twitter-Emotion-Dataset.git)](link)
+- **Download**: [(https://github.com/meisaputri21/Indonesian-Twitter-Emotion-Dataset.git)](link)
 - **Format**: CSV with columns: `tweet`, `label`
 
 ### Setup Instructions
