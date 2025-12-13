@@ -32,48 +32,16 @@ import time
 from google.colab import drive
 drive.mount('/content/drive')
 
-"""Processing Crawling Data Results"""
-
-# Load and combine depressed dataset
-
-df1 = pd.read_csv('/content/drive/MyDrive/dataset/depressed/capek.csv')
-df2 = pd.read_csv('/content/drive/MyDrive/dataset/depressed/sedih.csv')
-df3 = pd.read_csv('/content/drive/MyDrive/dataset/depressed/depresi.csv')
-df4 = pd.read_csv('/content/drive/MyDrive/dataset/depressed/stress.csv')
-
-df_depressed = pd.concat([df1, df2, df3, df4], ignore_index=True)
-df_depressed.to_csv('/content/drive/MyDrive/dataset/depressed/depressed.csv', index=False)
-
-# Load and combine control dataset
-
-df5 = pd.read_csv('/content/drive/MyDrive/dataset/control/seneng.csv')
-df6 = pd.read_csv('/content/drive/MyDrive/dataset/control/liburan.csv')
-df7 = pd.read_csv('/content/drive/MyDrive/dataset/control/rekomen.csv')
-df8 = pd.read_csv('/content/drive/MyDrive/dataset/control/belanja.csv')
-
-df_control = pd.concat([df5, df6, df7, df8], ignore_index=True)
-df_control.to_csv('/content/drive/MyDrive/dataset/control/control.csv', index=False)
-
-# Label dataset
-
-df_depressed ['label'] = 1
-df_control ['label'] = 0
-
-# Combine dataset
-
-df = pd.concat([df_depressed, df_control], ignore_index=True)
-df.to_csv('/content/drive/MyDrive/dataset/dataset.csv', index=False)
-
 """Configuration"""
 
-DEPRESSION_DATASET = '/content/drive/MyDrive/dataset/dataset.csv'
-EMOTION_DATASET = '/content/drive/MyDrive/dataset/Twitter_Emotion_Dataset.csv'
+DEPRESSION_DATASET = 'dataset.csv'
+EMOTION_DATASET = 'Twitter_Emotion_Dataset.csv'
 
-TEACHER_MODEL_PATH = "/content/drive/MyDrive/dataset/saved_teacher_model"
-FINAL_MODEL_PATH = '/content/drive/MyDrive/dataset/final_depression_model'
+TEACHER_MODEL_PATH = 'saved_teacher_model'
+FINAL_MODEL_PATH = 'final_depression_model'
 
-TEMP_TEACHER_PATH = '/content/local_teacher_model'
-TEMP_FINAL_PATH = '/content/local_final_model'
+TEMP_TEACHER_PATH = 'local_teacher_model'
+TEMP_FINAL_PATH = 'local_final_model'
 
 os.makedirs(os.path.dirname(TEACHER_MODEL_PATH), exist_ok=True)
 os.makedirs(os.path.dirname(FINAL_MODEL_PATH), exist_ok=True)
