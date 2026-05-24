@@ -1,6 +1,6 @@
 # Indonesian Tweet Depression Detection using Knowledge Distillation
 
-This project focuses on detecting depressive content in Indonesian tweets using transformer-based language models and knowledge distillation.
+This project was completed for a NLP-course class project. The project focuses on detecting depressive content in Indonesian tweets using transformer-based language models and knowledge distillation.
 
 The system compares multiple transformer models and deploys the best-performing model for depressive tweet classification.
 
@@ -137,8 +137,8 @@ The model is evaluated using:
 The final model is deployed using Gradio for interactive prediction.
 
 The system outputs:
-- predicted class
-- prediction confidence score
+- Predicted class
+- Prediction confidence score
 ![Gradio Interface](Gradio/result_1.png)
 ![Gradio Interface](Gradio/result_2.png)
 
@@ -147,9 +147,9 @@ The system outputs:
 # Disclaimer
 
 This project is intended for:
-- educational purposes
-- research purposes
-- early screening assistance
+- Educational purposes
+- Research purposes
+- Early screening assistance
 
 The model cannot diagnose depression or mental illness and should not replace professional medical or psychological evaluation.
 
@@ -159,10 +159,10 @@ The model cannot diagnose depression or mental illness and should not replace pr
 
 Potential improvements include:
 
-- larger datasets
-- sarcasm detection
-- context-aware classification
-- multimodal mental health detection
+- Larger datasets
+- Sarcasm detection
+- Context-aware classification
+- Multimodal mental health detection
 
 ---
 
