@@ -139,6 +139,8 @@ The final model is deployed using Gradio for interactive prediction.
 The system outputs:
 - predicted class
 - prediction confidence score
+![Gradio Interface](Gradio/result_1.png)
+![Gradio Interface](Gradio/result_2.png)
 
 ---
 
